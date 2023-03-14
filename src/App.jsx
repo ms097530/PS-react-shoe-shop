@@ -1,5 +1,6 @@
 import './App.css';
 
+import { useState } from 'react';
 import Header from './components/Header';
 import ProductList from './components/ProductList';
 import Footer from './components/Footer';
@@ -10,6 +11,8 @@ import nikeData from './data/nike-data'
 
 function App()
 {
+  const [cart, setCart] = useState([])
+
   return (
     <div className="App">
       <Header />

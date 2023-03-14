@@ -9,7 +9,7 @@ console.log(nikeData)
 export default function ProductList()
 {
     const [data, setData] = useState(nikeData)
-    const [cart, setCart] = useState([])
+
     return (
         // <h1>Products List</h1>
         <>
