@@ -1,4 +1,4 @@
-export default [
+const nikeData = [
     {
         id: "1",
         image: "https://abe-nike-data.s3.amazonaws.com/nike1.png",
@@ -198,3 +198,5 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air cushioning for all-day comfort. The rubber outsole offers durable traction on a variety of surfaces.`
     }
 ];
+
+export default nikeData
