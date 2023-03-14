@@ -1,6 +1,6 @@
 import ProductListItem from "./ProductListItem"
 
-export default function ProductList({ products, shoppingCart })
+export default function ProductList({ products, addToCart })
 {
 
 
@@ -11,7 +11,7 @@ export default function ProductList({ products, shoppingCart })
                 products.map(product =>
                 {
                     return (
-                        <ProductListItem product={product} key={product.id} />
+                        <ProductListItem product={product} addToCart={addToCart} key={product.id} />
                     )
                 })
             }
