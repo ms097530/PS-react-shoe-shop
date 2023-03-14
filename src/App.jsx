@@ -16,8 +16,8 @@ function App()
 
   return (
     <div className="App">
-      <Header cart={cart} />
-      <ProductList data={data} cart={cart} />
+      <Header shoppingCart={cart} />
+      <ProductList products={data} shoppingCart={cart} />
       <Footer />
     </div>
   );
