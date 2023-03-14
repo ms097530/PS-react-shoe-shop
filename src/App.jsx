@@ -11,12 +11,13 @@ import nikeData from './data/nike-data'
 
 function App()
 {
+  const [data, setData] = useState(nikeData)
   const [cart, setCart] = useState([])
 
   return (
     <div className="App">
-      <Header />
-      <ProductList />
+      <Header cart={cart} />
+      <ProductList data={data} cart={cart} />
       <Footer />
     </div>
   );

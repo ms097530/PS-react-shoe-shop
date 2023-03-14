@@ -1,14 +1,8 @@
-import { useState } from "react"
-
 import ProductListItem from "./ProductListItem"
 
-import nikeData from "../data/nike-data"
-
-console.log(nikeData)
-
-export default function ProductList()
+export default function ProductList({ data })
 {
-    const [data, setData] = useState(nikeData)
+
 
     return (
         // <h1>Products List</h1>
