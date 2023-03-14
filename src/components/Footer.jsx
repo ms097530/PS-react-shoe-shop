@@ -4,8 +4,8 @@ export default function Footer()
         <footer style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
             <section >
                 <h3>Social Media</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+                <a href="/">Facebook</a>
+                <a href="/">Instagram</a>
             </section>
 
             <section>
