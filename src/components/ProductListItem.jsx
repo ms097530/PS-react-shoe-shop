@@ -2,7 +2,8 @@ export default function ProductListItem({ product, addToCart })
 {
     const handleClick = (e) =>
     {
-        addToCart(product)
+        // addToCart is setCart, so use previous cart state to set new cart state
+        addToCart(prevCart => [...prevCart, product])
     }
 
     return (
