@@ -7,7 +7,7 @@ export default function Header()
     return (
         <header>
             <h1>Nike Store</h1>
-            <p>Shopping Cart: {cart.length}</p>
+            <p>Shopping Cart: {cart.length > 0 ? cart.length : 'Empty'}</p>
         </header>
     )
 }
