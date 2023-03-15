@@ -18,6 +18,7 @@ function App()
 
   // 2. Wrap the components inside the Context Provider and pass the values
   return (
+    // * NOTE: Generally want to keep context values more granular, can cause performance issues with re-rendering when a value in the context changes
     <ProductContext.Provider value={{ data, cart, setCart }}>
       <div className="App">
         <Header shoppingCart={cart} />
