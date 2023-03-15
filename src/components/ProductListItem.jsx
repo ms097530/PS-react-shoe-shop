@@ -1,9 +1,15 @@
+import { useContext } from "react"
+import { ProductContext } from "../App"
+
 export default function ProductListItem({ product, addToCart })
 {
+    // Consume the context
+    const productContextValue = useContext(ProductContext)
+
     const handleClick = (e) =>
     {
-        // addToCart is setCart, so use previous cart state to set new cart state
-        addToCart(prevCart => [...prevCart, product])
+        // use setter from context to update cart value
+        productContextValue.setCart(prevCart => [...prevCart, product])
     }
 
     return (
