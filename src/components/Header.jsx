@@ -1,9 +1,13 @@
-export default function Header({ shoppingCart })
+import { useContext } from "react"
+import { ProductContext } from "../App"
+
+export default function Header()
 {
+    const { cart } = useContext(ProductContext)
     return (
         <header>
             <h1>Nike Store</h1>
-            <p>Shopping Cart: {shoppingCart.length}</p>
+            <p>Shopping Cart: {cart.length}</p>
         </header>
     )
 }
